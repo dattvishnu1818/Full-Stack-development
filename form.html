@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        #center_{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cen{
+              display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        h1{
+            text-align: center;
+            color: rgb(255, 72, 0);
+        }
+        label{
+            margin: 15px;
+        }
+        .radio_{
+            display: flex;
+            justify-content: center;
+            /* align-items: flex-start; */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Kindly fill the form</h1>
+    <main id="center_">
+    <form class="cen">
+        <label for="name_"; margin-bottom: 5px;">Name</label>
+        <input type="text" id="name_" placeholder="Enter your Name" style="margin-bottom: 15px;">
+
+        <label for="email_id" ; margin-bottom: 5px;">Email id</label>
+        <input type="email" id="email_id" placeholder="Enter your email id" style=" margin-bottom: 15px;">
+
+        <label for="mobile_id"; margin-bottom: 5px;">Mobile No.</label>
+        <input type="text" id="mobile_id" placeholder="Enter your mobile no." style=" margin-bottom: 15px;">
+
+        <label for="pass_"; margin-bottom: 5px;">Password</label>
+        <input type="password" id="pass_" placeholder="Enter your password" style=" margin-bottom: 15px;">
+
+        <p>Choose your favorite Web language:</p>
+        
+        <div class="radio_" style="margin-bottom: 5px;">
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label>
+        </div>
+        <div class="radio_" style="margin-bottom: 5px;">
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label>
+        </div>
+        <div class="radio_" style="margin-bottom: 15px;">
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</main>
+</body>
+</html>
