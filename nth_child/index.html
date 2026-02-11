@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #cc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-style: italic;
+        }
+        #toggle{
+            margin: 20px;
+        }
+    </style>
+     <!-- <link rel="stylesheet" href="style.css">  -->
 </head>
+
 <body>
-    
+    <main id="cc">
+        <form>
+            <label for="name_">Name</label> <br>
+            <input type="text" id="name_" placeholder="Enter your Name"> <br>
+            <label for="email_id">Email id</label> <br>
+            <input type="email" name="" id="email_id" placeholder="Enter your email id"> <br>
+            <label for="mobile_id">Mobile No.</label> <br>
+            <input type="text" id="mobile_id" placeholder="Enter your mobile no."> <br>
+            <label for="">Password</label> <br>
+            <input type="text" placeholder="Enter your password"> <br>
+            <p>Choose your favorite Web language:</p>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label> <br>
+            <button>Submit</button>
+            <div>
+            <button id="toggle">Dark mode</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
