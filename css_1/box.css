@@ -1,0 +1,50 @@
+     * {
+            box-sizing: border-box;
+        }
+    body{
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .div1 {
+            width: 300px;
+            height: 200px;
+            border: 1px solid blue;
+        }
+
+        .div2 {
+            width: 300px;
+            height: 200px;
+            padding: 50px;
+            border: 1px solid red;
+        }
+        h1{
+            text-align: center;
+            border-bottom: 2px solid orangered;
+        }
+        .para_1{
+             border: 2px solid orangered;
+            padding: 10px;
+            animation: popup 5s infinite  reverse linear
+        }
+        .para_2{
+            border: 2px solid orangered;
+            padding: 10px;
+            animation: popup 5s infinite  reverse linear ;
+
+
+        }
+
+@keyframes popup{
+    from{
+        background-color: teal;
+        border-radius: 10%;
+        
+    }
+    to{
+        transform: translateX(50px) ;
+        background-color: aqua;
+    }
+}

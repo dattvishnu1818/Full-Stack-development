@@ -1,0 +1,43 @@
+<style>
+    h1 {
+        text-align: center;
+    }
+    body {
+        background-color: antiquewhite;
+        margin: 0;
+        min-height: 100vh; /* Ensures body takes full screen height */
+    }
+    .center_ {
+        display: flex;
+        /* flex-direction: column;  */
+        /* Stacks children vertically */
+        justify-content: center; 
+        /* Centers vertically */
+        /* align-items: center;      */
+        /* Centers horizontally */
+        gap: 20px;
+    }
+    
+    /* This targets the div holding your media */
+    .media-container {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 35px;
+    }
+</style>
+
+<body>
+    <h1>Multimedia Webpage</h1>
+    <main class="center_">
+        <div class="media-container">
+            <label for="video_1" style="font-weight: bold;">this is video label</label>
+            
+            <video id="video_1" controls width="100%" src="Reacher S03E03 - Number 2 with a Bullet (Awafim.tv).mkv"></video>
+
+            <audio loop controls src="Unconfirmed 74010.mp3">this is audio</audio>
+            
+            <video loop width="100%" controls src="Reacher S03E03 - Number 2 with a Bullet (Awafim.tv).mkv"></video>
+        </div>
+    </main>
+</body>

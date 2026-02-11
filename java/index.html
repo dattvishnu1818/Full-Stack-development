@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            height: 500px;
+            width: 100vw;
+            border: 2px solid black;
+            gap: 5px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            background-color: antiquewhite;
+
+        }
+
+        .box {
+            /* height: 50px; */
+            /* width: 100vw; */
+            border: 2px solid red;
+            /* margin: 5px 0px; */
+            gap: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container_1 {
+            border: 2px solid purple;
+            height: 600px;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* align-content: center; */
+            /* animation: square 2s infinite reverse; */
+        }
+
+        .box_1 {
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            border: 2px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* .p_tag{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr 1fr 1fr;
+                background-color: wheat;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr 1fr;
+                background-color: yellowgreen;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                grid-template-columns: 1fr;
+                background-color: aqua;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="box">box-1</div>
+            <div class="box">box-2</div>
+            <div class="box">box-3</div>
+            <div class="box">box-4</div>
+            <div class="box">box-5</div>
+            <div class="box">box-6</div>
+            <div class="box">box-7</div>
+            <div class="box">box-8</div>
+            <div class="box">box-9</div>
+            <div class="box">box-10</div>
+        </div>
+    </main>
+    </div>
+    <div class="container_1">
+        <div class="box_1">
+            <p class="p_tag">1</p>
+        </div>
+        <div class="box_1">
+            <p class="p_tag">2</p>
+        </div>
+        <div class="box_1">
+            <p class="p_tag">3</p>
+            <p class="p_tag">3</p>
+            <p class="p_tag">3</p>
+
+        </div>
+        <div class="box_1">
+            <p class="p_tag">4</p>
+        </div>
+        <!-- <div class="box_1">2</div>
+        <div class="box_1">3</div>
+        <div class="box_1">4</div> -->
+    </div>
+    <!-- <SCript src=""></SCript> -->
+</body>
+    
+</html>

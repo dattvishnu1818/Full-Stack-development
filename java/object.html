@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <style>
+        .container {
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 10px;
+        }
+
+        #btnId {
+            padding: 8px 16px;
+        }
+
+        #paraBtnId {
+            padding: 8px 16px;
+        }
+
+        #countBtn {
+            padding: 8px 16px;
+        }
+
+        #num {
+            border: 2px solid orange;
+            padding: 8px 32px;
+        }
+
+        .wrap {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="containerId">
+        <h2> Adding object data to html file</h2>
+        <div class="wrap">
+            <p>First name = </p>
+            <p id="paraId">add text here</p>
+        </div>
+        <div class="wrap">
+            <p>Last Name = </p>
+            <p id="paraId1">add text here</p>
+        </div>
+        <div class="wrap">
+            <p>Age = </p>
+            <p id="paraId2">add text here</p>
+        </div>
+        <!-- <button id="paraBtnId">Click here to add object text</button> -->
+        <button id="btnId">Click here to toggleColor</button>
+        <p id="num"> 1</p>
+        <button id="countBtn">Click here to add no.</button>
+    </div>
+    <script src="object.js"></script>
+</body>
+
+</html>
