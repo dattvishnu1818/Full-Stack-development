@@ -39,11 +39,11 @@ btnId.addEventListener('click' , function() {
 })
 
 
-const countBtnn = document.getElementById('countBtn');
-const numm = document.getElementById('num')
+const countBtn = document.getElementById('countBtn');
+const num = document.getElementById('num')
 
-countBtnn.addEventListener('click', function(){
-    numm.innerText = parseInt(numm.innerText) + 1;
+countBtn.addEventListener('click', function(){
+    num.innerText = parseInt(num.innerText) + 1;
 });
 
 
