@@ -6,25 +6,28 @@ let user = {
   name: "",
 };
 
-btn.addEventListener("click", function () {
-    event.preventDefault();
+function showMessage(message, color, bgColor) {
+  output.textContent = message;
+  output.style.color = color;
+  output.style.backgroundColor = bgColor;
+  output.style.transition = "transform 1s ease";
+  output.style.transform = "rotate(360deg)";
+}
+
+btn.addEventListener("click", function (event) {
+  event.preventDefault();
+  
   user.name = inputId.value;
+  const allowedUserName = "raj";
 
   if (inputId.value === "") {
     alert("Kindly enter your name");
-  } else if (inputId.value === "raj") {
-    output.textContent = "Welcome " + user.name;
-    output.style.color = "green";
-    output.style.transition = 'transform 1s ease';
-    output.style.transform = 'rotate(360deg)';
-    output.style.backgroundColor = "#46e06a99";
+    inputId.focus();
+  } else if (inputId.value === allowedUserName) {
+    showMessage("Welcome " + user.name, "green",);
     inputId.value = "";
   } else {
-    output.textContent = "User not valid!!";
-    output.style.color = "red";
-    output.style.transition = 'transform 1s ease';
-    output.style.transform = 'rotate(360deg)';
-    output.style.backgroundColor = "#dd6e6e99";
+    showMessage("User not allowed", "red", "#e79292");
     inputId.value = "";
   }
 });

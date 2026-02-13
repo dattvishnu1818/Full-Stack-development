@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            height: 100vh;
+            border: 2px solid;
+        }
+
+        .inputClass {
+            padding: 8px 16px;
+        }
+
+        #processBtn {
+            padding: 8px 32px;
+        }
+
+        .box {
+            border: 2px solid teal;
+            width: 200px;
+            height: 20px;
+            margin: 0px;
+            padding: 4px 8px;
+            border-radius: 40px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+   
+<body>
+    <form action="" class="warp">
+        <div id="container">
+            <h2>Student Portal</h2>
+            <input class="inputClass" type="text" id="name" placeholder="Student Name">
+            <input class="inputClass" type="number" id="age" placeholder="Age">
+            <input class="inputClass" type="number" id="math" placeholder="Math Marks">
+            <input class="inputClass" type="number" id="science" placeholder="Science Marks">
+            <input class="inputClass" type="number" id="english" placeholder="English Marks">
+
+            <button id="processBtn">Calculate Result</button>
+
+            <p class="box" id="displayArea"></p>
+            <p class="box" id="displayName"></p>
+            <p class="box" id="displayAge"></p>
+            <p class="box" id="displayAverage"></p>
+            <p class="box" id="displayResult"></p>
+    </form>
+    <script src="app.js"></script>
+    </div>
+</body>
+
+</html>
