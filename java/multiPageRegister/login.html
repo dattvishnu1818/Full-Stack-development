@@ -22,42 +22,54 @@
             height: 100vh;
             gap: 20px;
             position: relative;
-            /* z-index: 30; */
-
-            /* border: 2px solid black; */
+           
         }
+      
 
         #btn {
             padding: 8px 32px;
             border-radius: 40px;
             cursor: pointer;
-            
+            font-weight:bold;
+            border: 2px solid orange;
+            box-shadow: 10px 10px 5px orange;
+            color : black
         }
+        #btn:hover {
+            background-color: #dcdddd;
+}
 
-        #output {
+        #loginPassword {
             border: 2px solid orange;
             width: 200px;
             height: 25px;
             border-radius: 40px;
             padding: 5px;
             text-align: center;
+            box-shadow: 10px 10px 5px orange;
+        }
+          #loginPassword:focus {
+            border: 2px solid ;
+            outline: none;
+            box-shadow: 10px 10px 5px orange;
+        
         }
 
-        #inputId {
+        #loginEmail {
             width: 200px;
             height: 25px;
             border-radius: 40px;
             padding: 5px;
             text-align: center;
             outline: none;
-            border: none;
-            /* border-bottom: 1px solid orange; */
+            border: 2px solid orange;
+            box-shadow: 10px 10px 5px orange;
         }
 
-        #inputId:focus {
+        #loginEmail:focus {
             border: 2px solid ;
             outline: none;
-            box-shadow: 10px 10px 5px lightblue;
+            
         
         }
 
@@ -112,7 +124,9 @@
                 transform: rotate(0deg);
             }
         }
-
+      p{
+        color:red;
+      }
     
     </style>
 </head>
@@ -122,17 +136,19 @@
         <i></i>
         <i></i>
         <i></i>
-        <form action="" class="wrap">
+        <form action="" class="wrap" id= 'formId'>
             <div class="Container">
-                <h2>User Checker App</h2>
-                <input type="text" id="inputId" placeholder="Enter your Name">
-                <p id="output">Output Field </p>
+                <h2>Login Details</h2>
+                <input type="text" id="loginEmail" placeholder="Enter your Email">
+                <input type="password" id="loginPassword" placeholder="Enter your Password">
+                
                 <button id="btn"> Submit </button>
+                <p id = 'loginOutput'></p>
             </div>
         </form>
     </div>
 
-    <script src="app.js"></script>
+    <script src="register.js"></script>
 </body>
 
 </html>

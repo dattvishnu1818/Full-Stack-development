@@ -3,9 +3,9 @@ console.log("hello");
 const btn = document.getElementById("processBtn");
 const displayArea = document.getElementById("displayArea");
 const displayResult = document.getElementById("displayResult");
-const displayName = document.getElementById('displayName');
-const displayAge = document.getElementById('displayAge');
-const displayAverage = document.getElementById('displayAverage');
+const displayName = document.getElementById("displayName");
+const displayAge = document.getElementById("displayAge");
+const displayAverage = document.getElementById("displayAverage");
 const bodyStyle = document.body.style;
 
 btn.addEventListener("click", function (event) {
@@ -16,7 +16,6 @@ btn.addEventListener("click", function (event) {
   const inputMath = parseInt(document.getElementById("math").value);
   const inputScience = parseInt(document.getElementById("science").value);
   const inputEnglish = parseInt(document.getElementById("english").value);
-
 
   const student = {
     name: inputName,
@@ -40,17 +39,29 @@ btn.addEventListener("click", function (event) {
   } else if (avgMarks >= 75) {
     displayResult.textContent = "Distinction";
     bodyStyle.backgroundColor = "#71ef60";
+  
+
   } else if (avgMarks >= 40) {
     displayResult.textContent = "Pass";
     bodyStyle.backgroundColor = "orange";
+   
+
   } else {
     displayResult.textContent = "Fail";
     bodyStyle.backgroundColor = "red";
+    
+
   }
 
-  displayArea.textContent = 'Your Result'
-displayName.textContent = 'Name : ' + student.name;
-displayAge.textContent ='Age : ' +  student.age;
-displayAverage.textContent ='Avg Msrks : ' + avgMarks.toFixed(2)
+  displayArea.textContent = "Your Result";
+  displayName.textContent = "Name : " + student.name;
+  displayAge.textContent = "Age : " + student.age;
+  displayAverage.textContent = "Avg Marks : " + avgMarks.toFixed(2);
 
+//  document.getElementById("name").value = "";
+//   document.getElementById("age").value = "";
+//   document.getElementById("math").value = "";
+//   document.getElementById("science").value = "";
+//   document.getElementById("english").value = "";
+  document.getElementById("studentForm").reset();
 });
